@@ -1,6 +1,6 @@
 Credits to : https://github.com/shashirajraja for code.
 
-We Saad Rahman Warsi, Brianna Bouassali, are going to test this website for SEG3103 Project at University of Ottawa 
+We Saad Rahman Warsi, Brianna Bouassali, Layan Omar, are going to test this website for SEG3103 Project at University of Ottawa 
 
 # <a href="https://youtu.be/mLFPodZO8Iw" target="_blank"> OnlineBookStore </a> 
 - A Java Web Developement Project
