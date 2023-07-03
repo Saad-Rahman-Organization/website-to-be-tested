@@ -15,6 +15,9 @@ import com.bittercode.service.BookService;
 import com.bittercode.service.impl.BookServiceImpl;
 import com.bittercode.util.StoreUtil;
 
+import org.apache.commons.lang3.StringUtils;
+import java.lang.String.*;
+
 public class RemoveBookServlet extends HttpServlet {
 
     BookService bookService = new BookServiceImpl();
