@@ -1,4 +1,6 @@
 /target/
 /build/
+/bin/
 .classpath
 .settings
+src/main/resources/application.properties
