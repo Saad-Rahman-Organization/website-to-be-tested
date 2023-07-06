@@ -40,12 +40,40 @@ public class BookServiceImplPerfTest {
         Book b=bookService.getBookById(books[choice].getBarcode());
 
     }
+
+
     @Benchmark
     @Fork(2)
-    public void testgetAllBooks() throws StoreException
+    public void testdeleteBook() throws StoreException
     {
         BookServiceImpl bookService = new BookServiceImpl();
-        bookService.getAllBooks();
-        //System.out.println(b.getName());
+    }
+
+    @Benchmark
+    @Fork(2)
+    public void testaddBook() throws StoreException
+    {
+        BookServiceImpl bookService = new BookServiceImpl();
+    }
+
+    @Benchmark
+    @Fork(2)
+    public void testupdateBookQuantity() throws StoreException
+    {
+        BookServiceImpl bookService = new BookServiceImpl();
+    }
+
+    @Benchmark
+    @Fork(2)
+    public void testgetBooksSeparatedByComma() throws StoreException
+    {
+        BookServiceImpl bookService = new BookServiceImpl();
+    }
+
+    @Benchmark
+    @Fork(2)
+    public void testupdateBook() throws StoreException
+    {
+        BookServiceImpl bookService = new BookServiceImpl();
     }
 }
