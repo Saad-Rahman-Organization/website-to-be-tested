@@ -2,6 +2,7 @@ import com.bittercode.service.impl.BookServiceImplPerfTest;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
+import perf.AddBookTest;
 import perf.LoginTest;
 import perf.LogoutTest;
 
@@ -12,7 +13,7 @@ public class BenchmarkRunner {
 
 
         Options opt = new OptionsBuilder()
-                .include(".*" + LogoutTest.class.getSimpleName() + ".*")
+                .include(".*" + AddBookTest.class.getSimpleName() + ".*")
                 .warmupIterations(2)
                 .measurementIterations(2)
                 //.forks(1)
