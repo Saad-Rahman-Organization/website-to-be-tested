@@ -119,6 +119,6 @@ public class RemoveBook {
         driver.findElement(By.id("bookCode")).click();
         driver.findElement(By.id("bookCode")).sendKeys(id);
         driver.findElement(By.cssSelector(".btn")).click();
-      
+
     }
 }
