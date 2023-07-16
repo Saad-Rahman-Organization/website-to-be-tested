@@ -11,7 +11,7 @@ public class BenchmarkRunner {
 
 
         Options opt = new OptionsBuilder()
-                .include(".*" + CustomerRegisterTest.class.getSimpleName() + ".*")
+                .include(".*" + BookServiceImplPerfTest.class.getSimpleName() + ".*")
                 .warmupIterations(2)
                 .measurementIterations(2)
                 //.forks(1)

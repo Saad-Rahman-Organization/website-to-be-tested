@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
+@OutputTimeUnit(TimeUnit.SECONDS)
 public class LoginTest {
   private WebDriver driver;
   private Map<String, Object> vars;
@@ -42,6 +42,9 @@ public class LoginTest {
             //new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
+    driver.get("http://localhost:8080/onlinebookstore/");
+    driver.findElement(By.linkText("Login")).click();
+    driver.findElement(By.id("CaptchaDiv")).click();
   }
   @TearDown(Level.Invocation)
   public void tearDown() {
@@ -50,10 +53,6 @@ public class LoginTest {
   @Benchmark
   @Fork(2)
   public void login() {
-    driver.get("http://localhost:8080/onlinebookstore/");
-    driver.findElement(By.id("happy")).click();
-    driver.findElement(By.linkText("Login")).click();
-    driver.findElement(By.id("CaptchaDiv")).click();
     driver.findElement(By.id("userName")).click();
     driver.findElement(By.id("userName")).sendKeys("shashi");
     driver.findElement(By.id("Password")).click();
