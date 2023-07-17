@@ -295,4 +295,107 @@ public class UserMutationTest {
         driver.findElement(By.cssSelector(".btn")).click();
 
     }
+
+    @Test
+    public void registerAbNormalCustomer8() {
+        driver.get("http://localhost:8080/onlinebookstore/");
+        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("Email")).click();
+        driver.findElement(By.id("Email")).sendKeys(Long.toString(generateMobileNumber()));
+        driver.findElement(By.id("passWord")).click();
+        driver.findElement(By.id("passWord")).sendKeys(generatePassword());
+        driver.findElement(By.id("firstName")).click();
+        driver.findElement(By.id("firstName")).sendKeys(generateFirstName());
+        driver.findElement(By.id("lastName")).click();
+        driver.findElement(By.id("lastName")).sendKeys(generateLastName());
+        driver.findElement(By.id("address")).click();
+        driver.findElement(By.id("address")).sendKeys(generateAddress());
+        driver.findElement(By.id("phno")).click();
+        driver.findElement(By.id("phno")).sendKeys(Long.toString(generateMobileNumber()));
+        driver.findElement(By.name("acceptance")).click();
+        driver.findElement(By.cssSelector(".btn")).click();
+
+    }
+
+    @Test
+    public void registerAbNormalCustomer9() {
+        driver.get("http://localhost:8080/onlinebookstore/");
+        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("Email")).click();
+        driver.findElement(By.id("Email")).sendKeys(generatePassword());
+        driver.findElement(By.id("passWord")).click();
+        driver.findElement(By.id("passWord")).sendKeys(generatePassword());
+        driver.findElement(By.id("firstName")).click();
+        driver.findElement(By.id("firstName")).sendKeys(generateFirstName());
+        driver.findElement(By.id("lastName")).click();
+        driver.findElement(By.id("lastName")).sendKeys(generateLastName());
+        driver.findElement(By.id("address")).click();
+        driver.findElement(By.id("address")).sendKeys(generateAddress());
+        driver.findElement(By.id("phno")).click();
+        driver.findElement(By.id("phno")).sendKeys(Long.toString(generateMobileNumber()));
+        driver.findElement(By.name("acceptance")).click();
+        driver.findElement(By.cssSelector(".btn")).click();
+
+    }
+
+    @Test
+    public void registerAbNormalCustomer10() {
+        driver.get("http://localhost:8080/onlinebookstore/");
+        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("Email")).click();
+        driver.findElement(By.id("Email")).sendKeys(Long.toString(generateMobileNumber()));
+        driver.findElement(By.id("passWord")).click();
+        driver.findElement(By.id("passWord")).sendKeys(generatePassword());
+        driver.findElement(By.id("firstName")).click();
+        driver.findElement(By.id("firstName")).sendKeys(generateFirstName());
+        driver.findElement(By.id("lastName")).click();
+        driver.findElement(By.id("lastName")).sendKeys(generateLastName());
+        driver.findElement(By.id("address")).click();
+        driver.findElement(By.id("address")).sendKeys(generateAddress());
+        driver.findElement(By.id("phno")).click();
+        driver.findElement(By.id("phno")).sendKeys(Long.toString(-1*generateMobileNumber()));
+        driver.findElement(By.name("acceptance")).click();
+        driver.findElement(By.cssSelector(".btn")).click();
+
+    }
+    @Test
+    public void registerAbNormalCustomer11() {
+        driver.get("http://localhost:8080/onlinebookstore/");
+        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("Email")).click();
+        driver.findElement(By.id("Email")).sendKeys(Long.toString(generateMobileNumber()));
+        driver.findElement(By.id("passWord")).click();
+        driver.findElement(By.id("passWord")).sendKeys(generatePassword());
+        driver.findElement(By.id("firstName")).click();
+        driver.findElement(By.id("firstName")).sendKeys(generateFirstName());
+        driver.findElement(By.id("lastName")).click();
+        driver.findElement(By.id("lastName")).sendKeys(generateLastName());
+        driver.findElement(By.id("address")).click();
+        driver.findElement(By.id("address")).sendKeys(generateAddress());
+        driver.findElement(By.id("phno")).click();
+        driver.findElement(By.id("phno")).sendKeys(Long.toString(generateMobileNumber())+".5");
+        driver.findElement(By.name("acceptance")).click();
+        driver.findElement(By.cssSelector(".btn")).click();
+
+    }
+    @Test
+    public void registerAbNormalCustomer12() {
+        driver.get("http://localhost:8080/onlinebookstore/");
+        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("Email")).click();
+        driver.findElement(By.id("Email")).sendKeys(generateEmail());
+        driver.findElement(By.id("passWord")).click();
+        driver.findElement(By.id("passWord")).sendKeys(generatePassword());
+        driver.findElement(By.id("firstName")).click();
+        driver.findElement(By.id("firstName")).sendKeys(generateFirstName());
+        driver.findElement(By.id("lastName")).click();
+        driver.findElement(By.id("lastName")).sendKeys(generateLastName());
+        driver.findElement(By.id("address")).click();
+        driver.findElement(By.id("address")).sendKeys(generateAddress());
+        driver.findElement(By.id("phno")).click();
+        driver.findElement(By.id("phno")).sendKeys(Long.toString(generateMobileNumber()/10000));
+        driver.findElement(By.name("acceptance")).click();
+        driver.findElement(By.cssSelector(".btn")).click();
+
+    }
 }
