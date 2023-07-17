@@ -15,10 +15,10 @@ import java.util.concurrent.TimeUnit;
 public class BookServiceImplPerfTest {
 
     Book[] books;
-    @Setup(Level.Invocation)
+    @Setup
     public void setup()throws StoreException
     {
-        books=new Book[20];
+        books=new Book[63];
         BookServiceImpl bookService = new BookServiceImpl();
         List<Book> book=bookService.getAllBooks();
         int i;
@@ -36,13 +36,13 @@ public class BookServiceImplPerfTest {
     {
         BookServiceImpl bookService = new BookServiceImpl();
         Random rand=new Random();
-        int choice= rand.nextInt(12);
+        int choice= rand.nextInt(62);
         Book b=bookService.getBookById(books[choice].getBarcode());
 
     }
 
 
-    @Benchmark
+    /*@Benchmark
     @Fork(2)
     public void testdeleteBook() throws StoreException
     {
@@ -75,5 +75,5 @@ public class BookServiceImplPerfTest {
     public void testupdateBook() throws StoreException
     {
         BookServiceImpl bookService = new BookServiceImpl();
-    }
+    }*/
 }

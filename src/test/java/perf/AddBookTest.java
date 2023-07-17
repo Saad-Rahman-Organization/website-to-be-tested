@@ -15,7 +15,7 @@ import java.util.*;
 
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
+@OutputTimeUnit(TimeUnit.SECONDS)
 public class AddBookTest {
     private WebDriver driver;
     private Map<String, Object> vars;
