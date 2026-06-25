@@ -2,6 +2,8 @@ Credits to : https://github.com/shashirajraja for code.
 
 We Saad Rahman Warsi, Brianna Bouassali, Layan Omar,and Jeremy Dufour are going to test this website for SEG3103 Project at University of Ottawa 
 
+https://youtu.be/Mh8AdUPJ4io?si=n_-6HYrJ1mEZq785
+
 # <a href="https://youtu.be/mLFPodZO8Iw" target="_blank"> OnlineBookStore </a> 
 - A Java Web Developement Project
 - **Youtube VIDEO** for step by step Local Setup Guide : https://youtu.be/mLFPodZO8Iw
